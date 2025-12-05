@@ -79,6 +79,11 @@ int main(int argc, char **argv)
 		1, 1, 1
 	);
 
+	/* Position camera to show triangle */
+    tvr_pov_set_rot(fd, 1, 0, -4); 
+    tvr_pov_set_loc(fd, 10, 10, 10);
+
+
 	while (1)
 	{
 		sleep(1);
